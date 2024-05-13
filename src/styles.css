@@ -1,0 +1,206 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#content {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    padding: 0px 30px;
+
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    box-sizing: border-box;
+}
+
+header .restName {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0px;
+
+    gap: 40px;
+
+    height: 100%;
+
+    list-style: none;
+}
+
+ul>li button {
+    border: none;
+    background: none;
+    outline: none;
+
+    height: 100%;
+    width: 100%;
+
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0px;
+
+    margin-top: 60px;    
+    padding: 15px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #000;
+    height: 25px;
+    width: 100%;
+}
+
+.homePasta {
+    width: 975px;
+    display: block;
+    margin: 0 auto;
+}
+
+.quote {
+    font-weight: 100;
+    font-size: 25px;
+    text-align: center;
+}
+
+.quote.theQuote {
+    margin-bottom: 0px;
+}
+
+.quote.theAuthor {
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.dish img {
+    width: 235px;
+    height: 210px;
+    border: .5px solid #000;
+    border-radius: 5px;
+}
+
+.dish div {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.dish.one,
+.dish.four {
+    justify-self: start;
+}
+
+.dish.three,
+.dish.six {
+    justify-self: end;
+}
+
+.menu {
+    display: grid;
+    grid-template-rows: repeat(3, 35px 1fr);
+
+    width: 975px;
+    height: 550px;
+
+    margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.courseName {
+    text-align: center;
+    font-size: 25px;
+}
+
+.course {
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.menu-dishes,
+.menu-prices {
+    width: 150px;
+}
+
+.menu-prices {
+    text-align: end;
+}
+
+.menu-prices .price,
+.menu-dishes .dish {
+    font-size: 18px;
+}
+
+.contact {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    width: 500px;
+}
+
+.contact .contactTitle {
+    font-size: 25px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.contact input {
+    height: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
