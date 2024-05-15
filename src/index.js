@@ -3,7 +3,7 @@ import { menu } from "./menu.js";
 import { contact } from "./contact.js";
 import './styles.css';
 
-export function switchTab() {
+const initiate = function initiate() {
     const content = document.querySelector('#content')
     const homeBtn = document.querySelector('button#home');
     const menuBtn = document.querySelector('button#menu');
@@ -30,6 +30,4 @@ export function switchTab() {
     });
 
     content.appendChild(home());
-}
-
-switchTab();
+}();
